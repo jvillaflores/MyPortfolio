@@ -20,11 +20,10 @@
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-
 <body>
 <!-- header section -->
-<section class="banner" role="banner">
-<!--header navigation -->
+<section class="banner" role="banner"> 
+  <!--header navigation -->
   <header id="header">
     <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
       <nav class="navigation" role="navigation">
@@ -36,7 +35,7 @@
       </nav>
       <a href="#" class="nav-toggle">Menu<span></span></a> </div>
   </header>
-  <!--header navigation -->
+  <!--header navigation --> 
 </section>
 <!-- header section --> 
 <!-- title section -->
@@ -47,7 +46,7 @@
         <li>
           <div class="col-md-12">
             <blockquote>
-              <p>About me</p>
+              <p>Contact</p>
             </blockquote>
           </div>
         </li>
@@ -56,28 +55,32 @@
   </div>
 </section>
 <!-- title section --> 
-<!-- About section -->
+<!-- contact section -->
 <section id="teams" class="section teams">
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-sm-5">
-        <div class="bio"> <img src="images/bio-image.jpg" alt="" class="img-responsive"> </div>
+        <div class="bio">
+          <h4>I am honest, discreet and always focus on your goals.<br>
+            If you are looking for a experienced designer, just leave me a message and I'll contact you soon.</h4>
+        </div>
       </div>
-      <div class="col-md-7 col-sm-7">
-        <div class="bio"> <img src="images/team-1.jpg" alt="" class="img-responsive">
-          <div class="bio-content">
-            <h4>Jonathan Doe</h4>
-            <h5>UX/UI Designer, Front-end Developer</h5>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.vel eu leo.</p>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-          </div>
+      <div class="col-md-7 col-sm-7 conForm">
+        <div class="contact">
+          <div id="message"></div>
+          <form method="post" action="php/contact.php" name="cform" id="cform">
+            <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
+            <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
+            <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Project Details..."></textarea>
+            <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
+            <div id="simple-msg"></div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- About section --> 
+<!-- contact section --> 
 <!-- footer -->
 <footer class="section footer">
   <div class="footer-bottom">
@@ -99,7 +102,7 @@
     </div>
   </div>
 </footer>
-<!-- footer -->
+<!-- footer --> 
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
@@ -108,6 +111,7 @@
 <script src="js/jquery.waypoints.min.js"></script> 
 <script src="js/retina.min.js"></script> 
 <script src="js/modernizr.js"></script> 
+<script src="js/jquery.contact.js"></script> 
 <script src="js/main.js"></script>
 </body>
 </html>
