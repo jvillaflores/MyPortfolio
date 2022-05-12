@@ -82,6 +82,7 @@ body {
 ul, ol {
 	margin: 0;
 	padding: 0;
+	color: #6c7279;
 }
 ul li {
 	list-style: none;
@@ -338,7 +339,7 @@ ul li {
 	height:100%;  
   }
   .work .overlay {
-    background: rgba(232, 83, 79, 0.9);
+    background: rgba(244, 244, 246, 0.9);
     height: 100%;
     left: 0;
     opacity: 0;
@@ -364,7 +365,7 @@ ul li {
     -webkit-transition: all, 0.5s;
     transition: all, 0.5s; }
   .work h5, .work p {
-    color: #fff;
+    color: #30323D;
     margin: 0;
     opacity: 0; }
   .work h5 {
